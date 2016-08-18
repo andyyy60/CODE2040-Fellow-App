@@ -23,6 +23,6 @@ index = haystack.index(needle)
 # for i in len(haystack):
 #     if haystack[i] == needle:
 #         index = i
-payload = {'token':'afc2cb07854c50693f2607207c8b87c3','needle': index}
+payload = {'token':token,'needle': index}
 post_req = requests.post("http://challenge.code2040.org/api/haystack/validate", json= payload)
 print post_req.status_code, post_req.reason

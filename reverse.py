@@ -20,6 +20,6 @@ if len(string)>1:
     reversed_str = str(string)[::-1]
 else:
     reversed_str = str(string)
-payload = {'token':'afc2cb07854c50693f2607207c8b87c3', 'string': reversed_str}
+payload = {'token':token, 'string': reversed_str}
 final_req = requests.post("http://challenge.code2040.org/api/reverse/validate", json= payload)
 print final_req.status_code, final_req.reason
